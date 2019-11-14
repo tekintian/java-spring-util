@@ -133,6 +133,14 @@
                                 </goals>
                             </execution>
                         </executions>
+                        <!--排除目录/文件配置-->
+                        <configuration>
+                          <excludes>
+                            <exclude>**/spring/</exclude>
+                            <exclude>**/cn.tekin.spring.util.UtilApplication/</exclude>
+                            <exclude>**/META-INF/*.kotlin_module</exclude>
+                          </excludes>
+                        </configuration>
                     </plugin>
                     <!-- Javadoc -->
                     <plugin>
@@ -155,7 +163,7 @@
                             <!--跳过检查doc注释的规范性详见
                             https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html#BEJEFABE
                             -->
-                            <!--                            <doclint>accessibility,reference,missing</doclint>-->
+                            <!-- <doclint>accessibility,reference,missing</doclint>-->
                             <tags>
                                 <!--自定义标签增加-->
                                 <tag>
@@ -164,6 +172,8 @@
                                     <head>create tag ignore:</head>
                                 </tag>
                             </tags>
+                            <!--排除包配置-->
+<!--                            <excludePackageNames>cn.tekin.spring.entity</excludePackageNames>-->
                         </configuration>
                     </plugin>
                     <!--javadoc 文档修复插件 mvn javadoc:fix -->
