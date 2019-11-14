@@ -7,14 +7,18 @@ import java.util.List;
 
 /**
  * 验证工具类
+ *
  * @Author Tekin <tekintian@gmail.com>
- * @Create 2019-11-04 11:15
+ * @Create 2019 -11-04 11:15
+ * @author Tekin
+ * @version $Id: $Id
  */
 public class ValidUtil {
     /**
      * 根据验证结果BindingResult 返回各个字段的验证结果字符串
+     *
      * @param bindingResult @Valid注解的验证结果对象
-     * @return
+     * @return valid errors str
      */
     public static String getValidErrorsStr(BindingResult bindingResult) {
         //校验结果以集合的形式返回，

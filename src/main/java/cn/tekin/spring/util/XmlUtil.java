@@ -17,18 +17,23 @@ import java.util.Map;
 
 /**
  * XML处理工具类
- * @Author Tekin <tekintian@gmail.com>
- * @Create 2019-10-30 11:23
+ *
+ * @author Tekin
+ * @version $Id: $Id
  */
 public class XmlUtil {
+    /**
+     * Xml util
+     */
     public XmlUtil() {
     }
 
     /**
      * xml转对象
-     * @param xml
-     * @param objClass
-     * @return
+     *
+     * @param xml      xml
+     * @param objClass obj class
+     * @return object
      */
     public static Object toObject(String xml, Class objClass) {
         Persister serializer = new Persister();
@@ -43,8 +48,9 @@ public class XmlUtil {
 
     /**
      * xml转字符串
-     * @param obj
-     * @return
+     *
+     * @param obj obj
+     * @return string
      */
     public static String toString(Object obj) {
         Serializer serializer = new Persister();
@@ -61,8 +67,9 @@ public class XmlUtil {
 
     /**
      * xml转 HashMap
-     * @param strXML
-     * @return
+     *
+     * @param strXML str xml
+     * @return map
      */
     public static Map<String, String> toMap(String strXML) {
         try {

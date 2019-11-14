@@ -4,15 +4,19 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * request请求工具类
+ *
  * @Author Tekin <tekintian@gmail.com>
- * @Create 2019-11-01 21:02
+ * @Create 2019 -11-01 21:02
+ * @author Tekin
+ * @version $Id: $Id
  */
 public class RequestUtil {
     /**
      * 获取基本请求URL
      * http//yourdomainname/yourContextPath/
-     * @param request
-     * @return
+     *
+     * @param request request
+     * @return string
      */
     public static String getBaseUrl(HttpServletRequest request){
         String portStr=":"+request.getServerPort();
@@ -26,8 +30,9 @@ public class RequestUtil {
 
     /**
      * 获取客户端请求IP地址
-     * @param request
-     * @return
+     *
+     * @param request request
+     * @return request ip
      */
     public static String getRequestIP(HttpServletRequest request) {
         String clientIp = request.getHeader("x-forwarded-for");
@@ -45,8 +50,9 @@ public class RequestUtil {
 
     /**
      * isResponseBody
-     * @param request
-     * @return
+     *
+     * @param request request
+     * @return boolean
      */
     public static boolean isResponseBody(HttpServletRequest request) {
         if (request.getRequestURI().indexOf("ajax") > -1) {
@@ -58,8 +64,9 @@ public class RequestUtil {
 
     /**
      * 得到请求的根目录
-     * @param request
-     * @return
+     *
+     * @param request request
+     * @return base path
      */
     public static String getBasePath(HttpServletRequest request) {
         String path = request.getContextPath();
@@ -67,11 +74,12 @@ public class RequestUtil {
                 + ":" + request.getServerPort() + path;
         return basePath;
     }
+
     /**
      * 得到结构目录
      *
-     * @param request
-     * @return
+     * @param request request
+     * @return context path
      */
     public static String getContextPath(HttpServletRequest request) {
         String path = request.getContextPath();

@@ -13,12 +13,22 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
+ * Demo controller
+ *
  * @Author Tekin <tekintian@gmail.com>
- * @Create 2019-11-13 21:06
+ * @Create 2019 -11-13 21:06
+ * @author Tekin
+ * @version $Id: $Id
  */
 @RestController
 public class DemoController {
 
+    /**
+     * Index result vo
+     *
+     * @param req req
+     * @return the result vo
+     */
     @RequestMapping("/")
     public ResultVO index(HttpServletRequest req){
         HashMap<String, Object> map = new HashMap<>();

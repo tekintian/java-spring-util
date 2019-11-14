@@ -8,22 +8,36 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Net req util
+ *
  * @Author Tekin <tekintian@gmail.com>
- * @Create 2019-10-27 16:11
+ * @Create 2019 -10-27 16:11
+ * @author Tekin
+ * @version $Id: $Id
  */
 public class NetReqUtil {
 
-	 public static final String DEF_CHATSET = "UTF-8";
-	 public static final int DEF_CONN_TIMEOUT = 30000;
-	 public static final int DEF_READ_TIMEOUT = 30000;
+    /**
+     * DEF_CHATSET
+     */
+    public static final String DEF_CHATSET = "UTF-8";
+    /**
+     * DEF_CONN_TIMEOUT
+     */
+    public static final int DEF_CONN_TIMEOUT = 30000;
+    /**
+     * DEF_READ_TIMEOUT
+     */
+    public static final int DEF_READ_TIMEOUT = 30000;
 	 private static String userAgent =  "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36";
 
     /**
      * 将map型转为请求参数型
-     * @param params
-     * @return
+     *
+     * @param params params
+     * @return string
      */
-     public static String urlEncode(Map<String,Object> params) {
+    public static String urlEncode(Map<String,Object> params) {
 
     	if(params==null){return "";};
 
@@ -42,15 +56,16 @@ public class NetReqUtil {
         return r;
      }
 
-     /**
+    /**
+     * Request content string
      *
      * @param requestUrl 请求地址
-     * @param params 请求参数
-     * @param method 请求方法
-     * @return 请求结果
-     * @throws Exception
+     * @param params     请求参数
+     * @param method     请求方法
+     * @return 请求结果 string
+     * @throws java.lang.Exception if any.
      */
-     public static String requestContent(String requestUrl, Map<String,Object> params,String method) throws Exception {
+    public static String requestContent(String requestUrl, Map<String,Object> params,String method) throws Exception {
 
     	HttpURLConnection conn = null;
         BufferedReader reader = null;
@@ -116,10 +131,11 @@ public class NetReqUtil {
 
     /**
      * 测试
-     * @param args
-     * @throws Exception
+     *
+     * @param args args
+     * @throws java.lang.Exception if any.
      */
-	public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception{
 
 		String domain="http://api.xiaocongjisuan.com/";
 		String servlet="life/dream/analysis";

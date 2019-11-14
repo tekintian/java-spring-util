@@ -7,15 +7,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Author Tekin <tekintian@gmail.com>
- * @Create 2019-11-06 09:34
+ * cookie 工具类
+ *
+ * @author Tekin
+ * @version $Id: $Id
  */
 public class CookieUtil {
     /**
      * cookie设置
-     * @param resp HttpServletResponse 对象
-     * @param name 要设置的Cookie名称
-     * @param value 设置的cookie值
+     *
+     * @param resp   HttpServletResponse 对象
+     * @param name   要设置的Cookie名称
+     * @param value  设置的cookie值
      * @param maxAge cookie生存时间 单位秒, -1 长期有效
      */
     public static void set(HttpServletResponse resp, String name, String value, int maxAge){
@@ -27,9 +30,10 @@ public class CookieUtil {
 
     /**
      * 根据 key 获取对应的Cookie对象
+     *
      * @param req  HttpServletRequest请求对象
-     * @param name  要获取的自定义的cookie  key
-     * @return  Cookie对象或者null
+     * @param name 要获取的自定义的cookie  key
+     * @return Cookie对象或者null cookie
      */
     public static Cookie get(HttpServletRequest req, String name){
         Map<String, Cookie> cookieMap=getCookiesMap(req);
@@ -61,8 +65,9 @@ public class CookieUtil {
 
     /**
      * 删除cookie
-     * @param response
-     * @param name
+     *
+     * @param response response对象
+     * @param name     cookie名称
      */
     public static void deleteCookie(HttpServletResponse response, String name) {
         Cookie cookie = new Cookie(name, "");
@@ -71,12 +76,28 @@ public class CookieUtil {
         response.addCookie(cookie);
     }
 
+    /**
+     * Delete cookie *
+     *
+     * @param response response
+     * @param name     name
+     * @param path     path
+     */
     public  static void deleteCookie(HttpServletResponse response, String name, String path) {
         Cookie cookie = new Cookie(name, "");
         cookie.setPath(path);
         cookie.setMaxAge(0);
         response.addCookie(cookie);
     }
+
+    /**
+     * Delete cookie *
+     *
+     * @param response response
+     * @param name     name
+     * @param domain   domain
+     * @param path     path
+     */
     public  static void deleteCookie(HttpServletResponse response, String name, String domain, String path) {
         Cookie cookie = new Cookie(name, "");
         cookie.setPath(path);
@@ -89,9 +110,10 @@ public class CookieUtil {
 
     /**
      * 读取指定cookie的值
-     * @param request
-     * @param name
-     * @return
+     *
+     * @param request request
+     * @param name    name
+     * @return string string
      */
     public String readCookie(HttpServletRequest request, String name) {
         Cookie[] cookies = request.getCookies();
@@ -107,11 +129,14 @@ public class CookieUtil {
     }
 
     /**
-     * Read all cookies from the request's 'cookie' header, and parse it based on Cookie Version 1.
-     * <p/>This method can resolve tomcat's bug in handling special characters in cookie (The cookie is maybe written by other applications).
+     * Read all cookies from the request's 'cookie' header, and parse it
+     * based on Cookie Version 1.
+     * This method can resolve tomcat's bug in handling special characters in
+     * cookie (The cookie is maybe written by other applications).
      *
-     * @param request HttpServletRequest
-     * @param cookieName
+     * @param request    HttpServletRequest
+     * @param cookieName cookie name
+     * @return the string
      */
     public static String readCookieIgnoreSpecialCharacters(HttpServletRequest request, String cookieName) {
         String cs = request.getHeader("cookie") ;

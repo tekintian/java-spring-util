@@ -11,14 +11,16 @@ import java.util.Set;
  * 自定义的Bean工具类
  *
  * @Author Tekin <tekintian@gmail.com>
- * @Create 2019-10-25 20:25
+ * @Create 2019 -10-25 20:25
+ * @author Tekin
+ * @version $Id: $Id
  */
 public class MyBeanUtil {
     /**
      * 获取对象的null字段
      *
-     * @param source
-     * @return
+     * @param source source
+     * @return string [ ]
      */
     public static String[] getNullPropertyNames(Object source) {
         final BeanWrapper src = new BeanWrapperImpl(source);
@@ -38,8 +40,8 @@ public class MyBeanUtil {
      * 拷贝对象,忽略null字段
      * 使用方法:  MyBeanUtil.copyPropertiesIgnoreNull(Object src, Object target);
      *
-     * @param src
-     * @param target
+     * @param src    src
+     * @param target target
      */
     public static void copyPropertiesIgnoreNull(Object src, Object target) {
         BeanUtils.copyProperties(src, target, getNullPropertyNames(src));

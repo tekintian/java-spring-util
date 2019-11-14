@@ -3,14 +3,17 @@ package cn.tekin.spring.util;
 import com.alibaba.fastjson.JSONObject;
 
 /**
- * @Author Tekin <tekintian@gmail.com>
- * @Create 2019-10-26 11:00
+ * 对象 JSON相互转换工具
+ *
+ * @author Tekin
+ * @version $Id: $Id
  */
 public class MyJsonUtil {
     /**
      * 对象转换JSON STRING
-     * @param object
-     * @return
+     *
+     * @param object object
+     * @return string
      */
     public static String toJson(Object object){
 //        GsonBuilder gsonBuilder=new GsonBuilder();
@@ -25,8 +28,9 @@ public class MyJsonUtil {
 
     /**
      * json string转换为对象
-     * @param jsonString
-     * @return
+     *
+     * @param jsonString json string
+     * @return object
      */
     public static Object fromJson(String jsonString){
         return JSONObject.parse(jsonString);

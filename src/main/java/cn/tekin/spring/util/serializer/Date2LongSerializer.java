@@ -9,10 +9,13 @@ import java.io.IOException;
 import java.util.Date;
 
 /**
- * @Author Tekin <tekintian@gmail.com>
- * @Create 2019-10-26 12:46
+ * 日期序列化
+ *
+ * @author Tekin
+ * @version $Id: $Id
  */
 public class Date2LongSerializer extends JsonSerializer<Date> {
+    /** {@inheritDoc} */
     @Override
     public void serialize(Date date, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException, JsonProcessingException {
         jsonGenerator.writeNumber(date.getTime() / 1000);

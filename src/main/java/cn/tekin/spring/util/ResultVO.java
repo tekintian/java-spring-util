@@ -9,8 +9,11 @@ import java.util.ArrayList;
  * http请求的最外层范型对象
  * ResultVO<T> 范型
  *
+ * @param <T> parameter
  * @Author Tekin <tekintian@gmail.com>
- * @Create 2019-10-25 14:12
+ * @Create 2019 -10-25 14:12
+ * @author Tekin
+ * @version $Id: $Id
  */
 @Data
 public class ResultVO<T> implements Serializable {
@@ -21,12 +24,15 @@ public class ResultVO<T> implements Serializable {
     private String msg;
     private T data;
 
+    /**
+     * Util
+     */
     public static class Util {
         /**
          * 成功方法
          *
-         * @param object
-         * @return
+         * @param object object
+         * @return result vo
          */
         public static ResultVO success(Object object) {
             ResultVO resultVO = new ResultVO();
@@ -36,6 +42,11 @@ public class ResultVO<T> implements Serializable {
             return resultVO;
         }
 
+        /**
+         * Success result vo
+         *
+         * @return the result vo
+         */
         public static ResultVO success() {
             return success(null);
         }
@@ -43,9 +54,9 @@ public class ResultVO<T> implements Serializable {
         /**
          * 错误方法
          *
-         * @param code
-         * @param msg
-         * @return
+         * @param code code
+         * @param msg  msg
+         * @return result vo
          */
         public static ResultVO error(Integer code, String msg) {
             ResultVO resultVO = new ResultVO();
