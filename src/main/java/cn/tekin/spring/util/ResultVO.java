@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * ResultVO<T> 范型
  *
  * @param <T> parameter
- * @Author Tekin <tekintian@gmail.com>
+ * @Author Tekin \<tekintian@gmail.com\>
  * @Create 2019 -10-25 14:12
  * @author Tekin
  * @version $Id: $Id

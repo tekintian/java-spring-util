@@ -3,7 +3,7 @@ package cn.tekin.spring.util;
 /**
  * 日期工具类
  *
- * @Author Tekin <tekintian@gmail.com>
+ * @Author Tekin \<tekintian@gmail.com\>
  * @Create 2019-11-01 09:52
  * @author Tekin
  * @version $Id: $Id

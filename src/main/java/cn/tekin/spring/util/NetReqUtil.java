@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * Net req util
  *
- * @Author Tekin <tekintian@gmail.com>
+ * @Author Tekin \<tekintian@gmail.com\>
  * @Create 2019 -10-27 16:11
  * @author Tekin
  * @version $Id: $Id

@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * request请求工具类
  *
- * @Author Tekin <tekintian@gmail.com>
+ * @Author Tekin \<tekintian@gmail.com\>
  * @Create 2019 -11-01 21:02
  * @author Tekin
  * @version $Id: $Id

@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 验证工具类
  *
- * @Author Tekin <tekintian@gmail.com>
+ * @Author Tekin \<tekintian@gmail.com\>
  * @Create 2019 -11-04 11:15
  * @author Tekin
  * @version $Id: $Id
