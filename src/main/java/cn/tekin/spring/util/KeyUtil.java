@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * 主键生成工具
  *
- * @author Tekin \<tekintian@gmail.com\>
+ * @author Tekin   tekintian@gmail.com
  * @create 2019 -10-25 18:22
  * @version $Id: $Id
  */

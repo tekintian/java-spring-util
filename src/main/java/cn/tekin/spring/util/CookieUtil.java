@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * cookie 工具类
  *
- * @author Tekin
+ * @author Tekin   tekintian@gmail.com
  * @version $Id: $Id
  */
 public class CookieUtil {

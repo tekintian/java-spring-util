@@ -6,9 +6,9 @@ import org.springframework.data.domain.Sort;
 /**
  * 页面工具类
  *
- * @Author Tekin \<tekintian@gmail.com\>
- * @Create 2019 -11-03 20:54
- * @author Tekin
+ *
+ * @create 2019 -11-03 20:54
+ * @author Tekin   tekintian@gmail.com
  * @version $Id: $Id
  */
 public class PageUtil {

@@ -5,7 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 /**
  * 对象 JSON相互转换工具
  *
- * @author Tekin
+ * @author Tekin   tekintian@gmail.com
  * @version $Id: $Id
  */
 public class MyJsonUtil {

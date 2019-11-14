@@ -10,9 +10,8 @@ import java.util.Set;
 /**
  * 自定义的Bean工具类
  *
- * @Author Tekin \<tekintian@gmail.com\>
- * @Create 2019 -10-25 20:25
- * @author Tekin
+ * @create 2019 -10-25 20:25
+ * @author Tekin   tekintian@gmail.com
  * @version $Id: $Id
  */
 public class MyBeanUtil {

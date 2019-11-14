@@ -11,7 +11,7 @@ import java.util.Date;
 /**
  * 日期序列化
  *
- * @author Tekin
+ * @author Tekin   tekintian@gmail.com
  * @version $Id: $Id
  */
 public class Date2LongSerializer extends JsonSerializer<Date> {

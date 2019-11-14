@@ -3,9 +3,9 @@ package cn.tekin.spring.util;
 /**
  * 日期工具类
  *
- * @Author Tekin \<tekintian@gmail.com\>
- * @Create 2019-11-01 09:52
- * @author Tekin
+ *
+ * @create 2019-11-01 09:52
+ * @author Tekin   tekintian@gmail.com
  * @version $Id: $Id
  */
 

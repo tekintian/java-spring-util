@@ -15,9 +15,9 @@ import java.util.List;
 /**
  * Demo controller
  *
- * @Author Tekin \<tekintian@gmail.com\>
- * @Create 2019 -11-13 21:06
- * @author Tekin
+ *
+ * @create 2019 -11-13 21:06
+ * @author Tekin   tekintian@gmail.com
  * @version $Id: $Id
  */
 @RestController

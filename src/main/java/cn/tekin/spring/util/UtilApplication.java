@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Util application
  *
- * @Author Tekin \<tekintian@gmail.com\>
- * @Create 2019 -11-13 20:55
- * @author Tekin
+ *
+ * @create 2019 -11-13 20:55
+ * @author Tekin   tekintian@gmail.com
  * @version $Id: $Id
  */
 @SpringBootApplication

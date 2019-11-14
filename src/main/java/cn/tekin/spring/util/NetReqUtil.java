@@ -10,9 +10,9 @@ import java.util.Map;
 /**
  * Net req util
  *
- * @Author Tekin \<tekintian@gmail.com\>
- * @Create 2019 -10-27 16:11
- * @author Tekin
+ *
+  * @create 2019 -10-27 16:11
+ * @author Tekin   tekintian@gmail.com
  * @version $Id: $Id
  */
 public class NetReqUtil {

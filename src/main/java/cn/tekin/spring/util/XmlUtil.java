@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * XML处理工具类
  *
- * @author Tekin
+ * @author Tekin   tekintian@gmail.com
  * @version $Id: $Id
  */
 public class XmlUtil {
