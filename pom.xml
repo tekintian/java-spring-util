@@ -135,26 +135,23 @@
                             <!--跳过检查doc注释的规范性详见
                             https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html#BEJEFABE
                             -->
-                            <doclint>accessibility,reference,missing</doclint>
+<!--                            <doclint>accessibility,reference,missing</doclint>-->
                             <tags>
                                 <!--自定义标签增加-->
                                 <tag>
-                                    <name>Author</name>
-                                    <!-- todo tag for all places -->
-                                    <placement>a</placement>
-                                    <head>Author tag:</head>
+                                    <name>create</name>
+                                    <placement>a</placement> <!-- Author tag for all places -->
+                                    <head>create tag ignore:</head>
                                 </tag>
                             </tags>
                         </configuration>
-                        <dependencies>
-                            <!--javadoc 文档修复插件 mvn javadoc:fix -->
-                            <dependency>
-                                <groupId>org.codehaus.mojo</groupId>
-                                <artifactId>clirr-maven-plugin</artifactId>
-                                <version>2.8</version>
-                            </dependency>
-                        </dependencies>
                     </plugin>
+                    <!--javadoc 文档修复插件 mvn javadoc:fix -->
+                     <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>clirr-maven-plugin</artifactId>
+                        <version>2.8</version>
+                     </plugin>
                     <!-- GPG -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
