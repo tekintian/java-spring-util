@@ -13,7 +13,7 @@ project for spring boot project , include date util , json util, ObjectCopy util
 ~~~
 
 详细用法请参考API文档
-[API文档](docs/apidocs/index.html)
+[API文档](http://java-spring-util.tekin.cn/docs/apidocs/index.html)
 
 - ResultVO Util工具使用
 ~~~java
@@ -75,7 +75,7 @@ String xmlStr="<map>aaaa</map>";
 XmlUtil.toObject(xmlStr, User.class);
 ~~~
 
-更多用法,请参考 [API文档](docs/apidocs/index.html)
+更多用法,请参考 [API文档](http://java-spring-util.tekin.cn/docs/apidocs/index.html)
 
 ## javadoc 注释修复插件
 
