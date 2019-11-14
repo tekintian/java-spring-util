@@ -136,8 +136,8 @@
                         <!--排除目录/文件配置-->
                         <configuration>
                           <excludes>
-                            <exclude>**/spring/</exclude>
-                            <exclude>**/cn.tekin.spring.util.UtilApplication/</exclude>
+                            <exclude>**/cn.tekin.spring.util.controller/</exclude>
+                            <exclude>**/cn.tekin.spring.util.UtilApplication</exclude>
                             <exclude>**/META-INF/*.kotlin_module</exclude>
                           </excludes>
                         </configuration>
@@ -173,7 +173,8 @@
                                 </tag>
                             </tags>
                             <!--排除包配置-->
-<!--                            <excludePackageNames>cn.tekin.spring.entity</excludePackageNames>-->
+                            <excludePackageNames>cn.tekin.spring.controller</excludePackageNames>
+                            <excludePackageNames>cn.tekin.spring.util.UtilApplication</excludePackageNames>
                         </configuration>
                     </plugin>
                     <!--javadoc 文档修复插件 mvn javadoc:fix -->
